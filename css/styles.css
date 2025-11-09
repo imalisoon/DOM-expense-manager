@@ -16,11 +16,42 @@ body {
   min-height: 100svh;
   display: flex;
   flex-direction: column;
-  background-color: #DAF5F0;
 }
 
 body > main {
   flex: 1 0 auto;
+}
+
+main > section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main section > div.card-balance {
+  width: 90%;
+  height: 100px;
+  background-color: #87CEEB;
+  border-radius: 5px;
+  border: 2px solid black;
+  border-bottom: 3px solid black;
+}
+
+div.card-balance > p#p-balance {
+  font-size: 1.5em;
+  margin: 20px;
+}
+
+div.card-balance > div.card-transactions {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.card-transactions > p {
+  margin: 0 10px;
 }
 
 footer {
